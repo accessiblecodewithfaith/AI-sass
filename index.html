@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VonAI Hero</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #0f0f0f, #020202);
+    }
+    
+  </style>
+</head>
+
+<body class="text-white font-sans">
+  <!-- Navbar -->
+  <header class="w-full py-6 px-4 md:px-16 flex items-center justify-between">
+    <div class="text-2xl font-bold">VonAI</div>
+    <nav class="hidden md:flex space-x-8 text-gray-300">
+      <a href="#" class="hover:text-white">About us</a>
+      <a href="#ourprocess" class="hover:text-white">Our Process</a>
+      <a href="#usecases" class="hover:text-white">Use Cases</a>
+      <a href="#pricing" class="hover:text-white">Pricing</a>
+    </nav>
+    <div class="hidden md:flex items-center space-x-4">
+      <button class="text-sm text-gray-300 hover:text-white">EN</button>
+      <button class="bg-white text-black font-medium px-4 py-2 rounded">Book a call</button>
+    </div>
+    <!-- Mobile toggle -->
+    <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 space-y-4 text-gray-300">
+    <a href="#ourprocess" class="block">Our Process</a>
+    <a href="#usecases" class="block">Use Cases</a>
+    <a href="#pricing" class="block">Pricing</a>
+    <a href="#" class="block">Book a call</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="w-full px-4 md:px-16 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <!-- Left Content -->
+    <div>
+      <div class="inline-block bg-blue-900 text-blue-400 text-xs px-4 py-1 rounded-full mb-4">
+        GET 10% OFF ON THE PURCHASE OF ANY PLAN
+      </div>
+      <div class="transition-colors transition-transform duration-1000 ease-in-out hover:text-blue-400 hover:translate-x-2">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        Automate Your <br> Business Processes <br> With VonAI
+      </h1>
+      <p class="text-gray-400 mb-8">
+        Our tailored solutions cut down manual tasks, freeing time for strategic growth and scalability.
+      </p>
+      </div>
+      <div class="flex space-x-4">
+        <button class="bg-white text-black font-medium px-6 py-3 rounded">
+          Free Consultation
+        </button>
+        <button class="text-blue-400 hover:underline">
+          Get API Keys →
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Visuals -->
+    <div class="flex justify-center">
+      <!-- Placeholder for AI visual graphic -->
+      <div class="w-full max-w-md">
+        <img src="heroimage.png" alt="AI visual graphic" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Add AOS or Animate.css if needed for scroll animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<section class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold mb-4">Why Choose Our AI Platform?</h2>
+    <p class="text-gray-400 text-lg">Designed to simplify workflows and supercharge productivity.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+    <!-- Feature 1 -->
+    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-600 transition duration-300" data-aos="fade-up">
+      <div class="mb-4">
+        <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582M20 20v-5h-.582M15 8l-3 3m0 0l-3-3m3 3V4m0 8l3 3m-3-3l-3 3m3-3v8"></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Automate Repetitive Tasks</h3>
+      <p class="text-gray-400 text-sm">Save time and reduce errors by automating workflows with AI triggers.</p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+      <div class="mb-4">
+        <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11 12h2m4 0a6 6 0 11-12 0 6 6 0 0112 0zm1 8h.01M4 20h16"></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Real-Time Analytics</h3>
+      <p class="text-gray-400 text-sm">Access live insights and dashboards to track performance instantly.</p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+      <div class="mb-4">
+        <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18M4 8h16M5 13h14M6 18h12"></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Easy API Integration</h3>
+      <p class="text-gray-400 text-sm">Plug into any system with flexible RESTful APIs and webhooks.</p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="bg-gray-900 p-6 rounded-xl border border-gray-800 hover:border-blue-600 transition duration-300" data-aos="fade-up" data-aos-delay="300">
+      <div class="mb-4">
+        <svg class="w-10 h-10 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m0 4h.01M4.318 6.318a9.001 9.001 0 0112.728 0l.354.354a9.001 9.001 0 010 12.728l-.354.354a9.001 9.001 0 01-12.728 0l-.354-.354a9.001 9.001 0 010-12.728l.354-.354z"></path>
+        </svg>
+      </div>
+      <h3 class="text-xl font-semibold mb-2">Secure & Scalable</h3>
+      <p class="text-gray-400 text-sm">Enterprise-grade security and auto-scaling infrastructure built-in.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Include AOS JS if using scroll animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+
+<!-- AOS Styles -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<section id="ourprocess"class="bg-gradient-to-br from-[#0a0f1d] to-[#121c2c] text-white py-20 px-6">
+  <div class="max-w-5xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold mb-4">How It Works</h2>
+    <p class="text-gray-300 text-lg">Get started in minutes. Our AI handles the complexity—so you don’t have to.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+    <!-- Step 1 -->
+    <div class="text-center" data-aos="fade-up">
+      <div class="flex items-center justify-center w-16 h-16 mx-auto bg-blue-700/20 border border-blue-500 text-blue-300 rounded-full text-2xl font-bold mb-4">1</div>
+      <h3 class="text-xl font-semibold mb-2">Upload Your Data</h3>
+      <p class="text-gray-400 text-sm">Import files, forms, or connect your system in one click. All formats supported securely.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="flex items-center justify-center w-16 h-16 mx-auto bg-blue-700/20 border border-blue-500 text-blue-300 rounded-full text-2xl font-bold mb-4">2</div>
+      <h3 class="text-xl font-semibold mb-2">AI Processing</h3>
+      <p class="text-gray-400 text-sm">Our smart engine detects patterns, automates logic, and reveals insights instantly.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="flex items-center justify-center w-16 h-16 mx-auto bg-blue-700/20 border border-blue-500 text-blue-300 rounded-full text-2xl font-bold mb-4">3</div>
+      <h3 class="text-xl font-semibold mb-2">Export & Connect</h3>
+      <p class="text-gray-400 text-sm">Download results or integrate directly with your tools via secure API or webhooks.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+
+
+
+
+<!-- AOS Styles -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<section id="usecases"class="bg-gradient-to-br from-[#0b132b] to-[#1c2541] text-white py-20 px-6">
+  <div class="max-w-5xl mx-auto text-center mb-16">
+    <h2 class="text-4xl font-bold mb-4">Use Cases & Industries</h2>
+    <p class="text-gray-300 text-lg">Trusted across industries—our AI adapts to meet your business needs.</p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+    <!-- Industry 1 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in">
+      <div class="text-blue-400 text-3xl mb-4">💼</div>
+      <h3 class="text-xl font-semibold mb-2">Finance & Banking</h3>
+      <p class="text-gray-400 text-sm">Fraud detection, risk scoring, and smart client profiling powered by AI.</p>
+    </div>
+
+    <!-- Industry 2 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="100">
+      <div class="text-green-400 text-3xl mb-4">🏥</div>
+      <h3 class="text-xl font-semibold mb-2">Healthcare</h3>
+      <p class="text-gray-400 text-sm">Analyze patient data, predict health risks, and enhance diagnostics.</p>
+    </div>
+
+    <!-- Industry 3 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="200">
+      <div class="text-yellow-400 text-3xl mb-4">🛍️</div>
+      <h3 class="text-xl font-semibold mb-2">E-Commerce</h3>
+      <p class="text-gray-400 text-sm">Boost conversions with smart recommendations and dynamic pricing.</p>
+    </div>
+
+    <!-- Industry 4 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="300">
+      <div class="text-purple-400 text-3xl mb-4">🏗️</div>
+      <h3 class="text-xl font-semibold mb-2">Construction</h3>
+      <p class="text-gray-400 text-sm">Forecast project risks, automate reporting, and track safety compliance.</p>
+    </div>
+
+    <!-- Industry 5 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="400">
+      <div class="text-pink-400 text-3xl mb-4">🎓</div>
+      <h3 class="text-xl font-semibold mb-2">Education</h3>
+      <p class="text-gray-400 text-sm">Personalized learning paths, content insights, and AI tutoring assistants.</p>
+    </div>
+
+    <!-- Industry 6 -->
+    <div class="bg-[#1f2a44] hover:bg-[#273352] transition duration-300 rounded-xl p-6 text-center shadow-lg" data-aos="zoom-in" data-aos-delay="500">
+      <div class="text-red-400 text-3xl mb-4">📞</div>
+      <h3 class="text-xl font-semibold mb-2">Customer Support</h3>
+      <p class="text-gray-400 text-sm">Automate tickets, extract sentiment, and power chatbots with real intent.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+
+
+
+
+<section class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        <br><span class="text-blue-400">Client Testimonials</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Testimonial Card -->
+      <div class="bg-gray-900 rounded-xl p-6 relative shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Leslie" class="w-14 h-14 rounded-full ring-2 ring-blue-400"/>
+          <div>
+            <h3 class="font-semibold text-white">Leslie Alexander</h3>
+            <p class="text-gray-400 text-sm">CEO, Software Company</p>
+          </div>
+          <div class="ml-auto text-blue-400 text-xl">❝</div>
+        </div>
+        <div class="flex items-center space-x-1 mb-2">
+          <template id="stars"></template>
+          <span class="text-blue-400">★★★★★</span>
+          <span class="ml-2 text-sm text-white">5.0</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+          I was skeptical at first, but VonAI exceeded every expectation. The onboarding was effortless and the support team is fantastic.</div>
+
+      <!-- Dianne Russell -->
+      <div class="bg-gray-900 rounded-xl p-6 relative shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://i.pravatar.cc/150?img=67" alt="Dianne" class="w-14 h-14 rounded-full ring-2 ring-blue-400"/>
+          <div>
+            <h3 class="font-semibold text-white">Dianne Russell</h3>
+            <p class="text-gray-400 text-sm">CEO, Event Booking App</p>
+          </div>
+          <div class="ml-auto text-blue-400 text-xl">❝</div>
+        </div>
+        <div class="flex items-center space-x-1 mb-2">
+          <span class="text-blue-400">★★★★★</span>
+          <span class="ml-2 text-sm text-white">5.0</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+         We replaced three internal tools with VonAI. It’s intuitive, fast, and scales with our growth. Absolute game-changer.</div>
+
+      <!-- Kathryn Murphy -->
+      <div class="bg-gray-900 rounded-xl p-6 relative shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Kathryn" class="w-14 h-14 rounded-full ring-2 ring-blue-400"/>
+          <div>
+            <h3 class="font-semibold text-white">Kathryn Murphy</h3>
+            <p class="text-gray-400 text-sm">CEO, Coffee Shop App</p>
+          </div>
+          <div class="ml-auto text-blue-400 text-xl">❝</div>
+        </div>
+        <div class="flex items-center space-x-1 mb-2">
+          <span class="text-blue-400">★★★★★</span>
+          <span class="ml-2 text-sm text-white">5.0</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+         As a solo founder, I needed something that just worked. VonAI saved me hours every day and made my workflow 10x more efficient.</div>
+      <!-- Robert Fox -->
+      <div class="bg-gray-900 rounded-xl p-6 relative shadow-md">
+        <div class="flex items-center space-x-4 mb-4">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert" class="w-14 h-14 rounded-full ring-2 ring-blue-400"/>
+          <div>
+            <h3 class="font-semibold text-white">Robert Fox</h3>
+            <p class="text-gray-400 text-sm">CEO, Pet Food App</p>
+          </div>
+          <div class="ml-auto text-blue-400 text-xl">❝</div>
+        </div>
+        <div class="flex items-center space-x-1 mb-2">
+          <span class="text-blue-400">★★★★★</span>
+          <span class="ml-2 text-sm text-white">5.0</span>
+        </div>
+        <p class="text-gray-300 text-sm">
+         VonAI helped us automate 80% of our manual customer support tasks. The integration was seamless, and we saw results in under a week</div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+<section  id="pricing" class="py-20 px-6 bg-black text-white">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+    <p class="text-gray-400 text-lg">No hidden fees. Choose the plan that fits your AI workflow.</p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid gap-8 grid-cols-1 md:grid-cols-3">
+    
+    <!-- Starter Plan -->
+    <div class="group bg-gray-900 border border-gray-800 rounded-2xl p-8 transition transform hover:scale-105 duration-300">
+      <h3 class="text-2xl font-semibold mb-4">Starter</h3>
+      <p class="text-gray-400 mb-6">For individuals experimenting with AI tools.</p>
+      <div class="text-4xl font-bold mb-4">$0<span class="text-lg font-normal">/mo</span></div>
+      <ul class="space-y-3 text-gray-300 mb-6">
+        <li>✔️ 1 Project</li>
+        <li>✔️ 100 AI Tasks</li>
+        <li>✔️ Email Support</li>
+      </ul>
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-all duration-300">Get Started</button>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="group bg-gradient-to-b from-blue-700 to-blue-900 border border-blue-500 rounded-2xl p-8 transform scale-105 shadow-xl">
+      <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+      <p class="text-white mb-6">Best for growing teams building serious AI products.</p>
+      <div class="text-4xl font-bold mb-4">$49<span class="text-lg font-normal">/mo</span></div>
+      <ul class="space-y-3 text-gray-200 mb-6">
+        <li>✔️ 10 Projects</li>
+        <li>✔️ 10,000 AI Tasks</li>
+        <li>✔️ Priority Email Support</li>
+      </ul>
+      <button class="w-full bg-white text-blue-700 font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:bg-gray-100">Start Free Trial</button>
+    </div>
+
+    <!-- Enterprise Plan -->
+    <div class="group bg-gray-900 border border-gray-800 rounded-2xl p-8 transition transform hover:scale-105 duration-300">
+      <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+      <p class="text-gray-400 mb-6">For companies needing custom AI solutions.</p>
+      <div class="text-4xl font-bold mb-4">Custom</div>
+      <ul class="space-y-3 text-gray-300 mb-6">
+        <li>✔️ Unlimited Projects</li>
+        <li>✔️ Unlimited AI Tasks</li>
+        <li>✔️ Dedicated Support</li>
+      </ul>
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition-all duration-300">Contact Sales</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-blue-900 text-white py-12 px-6 md:px-16">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class=" text-gray-300 text-base md:text-lg mb-6">
+      Next-level Performance
+    </h2>
+    <p class="text-3xl md:text-4xl font-bold mb-4">
+      Start your free trial today and experience the power of intelligent automation.
+    </p>
+    <a href="#get-started" class="inline-block bg-white text-blue-900 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+      Get Started
+       <span class="text-xl">→</span>
+    </a>
+  </div>
+</section>
+
+
+
+<section class="bg-black text-white py-16 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+
+    <div class="space-y-4">
+
+      <!-- FAQ Item 1 -->
+      <div class="group border border-gray-800 rounded-lg p-5 transition-all duration-300 hover:border-blue-600">
+        <button class="flex justify-between items-center w-full text-left">
+          <span class="text-lg font-medium">How does your AI platform work?</span>
+          <svg class="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mt-3 text-gray-400 text-sm hidden group-hover:block">
+          Our AI platform uses large language models and automation tools to handle tasks like text generation, summarization, and intelligent workflows.
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="group border border-gray-800 rounded-lg p-5 transition-all duration-300 hover:border-blue-600">
+        <button class="flex justify-between items-center w-full text-left">
+          <span class="text-lg font-medium">Can I cancel my subscription anytime?</span>
+          <svg class="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mt-3 text-gray-400 text-sm hidden group-hover:block">
+          Yes, you can cancel at any time from your dashboard. There are no contracts or cancellation fees.
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="group border border-gray-800 rounded-lg p-5 transition-all duration-300 hover:border-blue-600">
+        <button class="flex justify-between items-center w-full text-left">
+          <span class="text-lg font-medium">Is there a free trial available?</span>
+          <svg class="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mt-3 text-gray-400 text-sm hidden group-hover:block">
+          Absolutely. All new users get a 7-day free trial with full access to the Pro features.
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="group border border-gray-800 rounded-lg p-5 transition-all duration-300 hover:border-blue-600">
+        <button class="flex justify-between items-center w-full text-left">
+          <span class="text-lg font-medium">Do you offer support?</span>
+          <svg class="w-5 h-5 transform group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mt-3 text-gray-400 text-sm hidden group-hover:block">
+          Yes. Our support team is available 24/7 via email for Pro and Enterprise users.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="bg-blue-900 text-gray-300 py-10 px-6 md:px-16">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Logo & About -->
+    <div>
+      <h3 class="text-white text-2xl font-bold mb-3">VonAI</h3>
+      <p class="text-gray-400 max-w-sm">
+        Empowering businesses with AI-powered automation to boost productivity and scale faster.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-white text-xl font-semibold mb-3">Quick Links</h4>
+      <ul>
+        <li class="mb-2 hover:text-white"><a href="#features">Features</a></li>
+        <li class="mb-2 hover:text-white"><a href="#pricing">Pricing</a></li>
+        <li class="mb-2 hover:text-white"><a href="#testimonials">Testimonials</a></li>
+        <li class="mb-2 hover:text-white"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social -->
+    <div>
+      <h4 class="text-white text-xl font-semibold mb-3">Contact Us</h4>
+      <p class="mb-3">Email: <a href="mailto:support@vonai.com" class="hover:text-white">support@vonai.com</a></p>
+      <p class="mb-5">Phone: <a href="tel:+1234567890" class="hover:text-white">+1 (234) 567-890</a></p>
+      
+      <div class="flex space-x-4">
+        <!-- Twitter -->
+        <a href="https://twitter.com/vonai" target="_blank" aria-label="Twitter" class="hover:text-white">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.02 10.86 10.86 0 01-3.44 1.31 5.42 5.42 0 00-9.23 4.94A15.4 15.4 0 012 4.86a5.42 5.42 0 001.68 7.23 5.37 5.37 0 01-2.45-.68v.07a5.42 5.42 0 004.34 5.32 5.48 5.48 0 01-2.44.09 5.42 5.42 0 005.06 3.77A10.87 10.87 0 013 19.54 15.33 15.33 0 008.29 21c9.14 0 14.14-7.72 14.14-14.41 0-.22 0-.42-.02-.62A10.14 10.14 0 0023 3z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/company/vonai" target="_blank" aria-label="LinkedIn" class="hover:text-white">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 002.5 6v12a2.5 2.5 0 002.48 2.5h14.04a2.5 2.5 0 002.48-2.5V6a2.5 2.5 0 00-2.48-2.5H4.98zm.02 15.1h-3v-9h3v9zm-1.5-10.29a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zm13.13 10.29h-3v-4.75c0-1.14-.42-1.9-1.46-1.9-.8 0-1.27.55-1.48 1.08-.08.2-.1.48-.1.76v4.81h-3s.04-7.8 0-8.6h3v1.22a2.97 2.97 0 012.73-1.51c2 0 3.5 1.3 3.5 4.1v4.79z"/></svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/vonai" target="_blank" aria-label="GitHub" class="hover:text-white">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.15c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.34-1.75c-1.1-.75.09-.73.09-.73a2.5 2.5 0 011.82 1.22 2.54 2.54 0 003.47 1 2.54 2.54 0 01.76-1.59c-2.66-.3-5.47-1.33-5.47-5.9a4.62 4.62 0 011.23-3.2 4.3 4.3 0 01.12-3.16s1-.33 3.3 1.23a11.44 11.44 0 016 0c2.28-1.56 3.28-1.23 3.28-1.23a4.3 4.3 0 01.13 3.16 4.62 4.62 0 011.22 3.2c0 4.58-2.8 5.59-5.48 5.88a2.85 2.85 0 01.82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0012 0z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-10 text-center text-gray-500 text-sm">
+    &copy; 2025 VonAI. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+
+<!-- Example using Heroicons (needs the SVG or icon library loaded) -->
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+  class="fixed bottom-6 right-6 z-50 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+    stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M5 10l7-7m0 0l7 7m-7-7v18" />
+  </svg>
+</button>
+
+
+
+
+</body>
+
+</html>
